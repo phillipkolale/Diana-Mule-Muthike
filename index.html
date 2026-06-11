@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Mule Muthike | Structural Vision</title>
+    <!-- Tailwind CSS for high-end layout structures and sleek typography -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Three.js for the immersive 3D wireframe mesh environment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght=0,300;0,400;0,600;0,800;1,400&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020504;
+            overflow-x: hidden;
+        }
+
+        /* Cinematic deep digital parallax canvas background */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110vh;
+            background-image: linear-gradient(to bottom, rgba(2, 5, 4, 0.88), rgba(4, 12, 10, 0.98)), 
+                              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+            pointer-events: none;
+            will-change: transform;
+        }
+
+        /* Luxury editorial glassmorphism structures */
+        .glass-card {
+            background: rgba(5, 10, 8, 0.65);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-gradient-emerald {
+            background: linear-gradient(135deg, #ffffff 40%, #10b981 75%, #059669 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Minimalist customized scroll track */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020504;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #10b981;
+            border-radius: 2px;
+        }
+
+        /* Scroll Reveal Structural Animation Physics */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .content-layer {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Typewriter text blinking indicator */
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background-color: #34d399;
+            vertical-align: middle;
+            animation: blink 1.1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased selection:bg-emerald-600 selection:text-white">
+
+    <!-- Layer 1: Parallax Matrix Underlay Image -->
+    <div class="matrix-bg" id="matrix-bg"></div>
+
+    <!-- Layer 2: Real-time 3D Interactive Wireframe Perspective Grid -->
+    <div id="canvas-container"></div>
+
+    <!-- Layer 3: Interactive UI Typography Layer -->
+    <div class="content-layer min-h-screen flex flex-col justify-between">
+        
+        <!-- Minimalist Editorial Top Navigation -->
+        <header class="w-full max-w-7xl mx-auto px-6 py-8 flex justify-between items-center reveal active">
+            <div class="text-xs font-bold tracking-[0.4em] text-emerald-500 uppercase">Framework // 2026</div>
+            <div class="h-[1px] flex-grow mx-8 bg-gradient-to-r from-emerald-500/20 to-transparent hidden md:block"></div>
+            <div class="text-xs tracking-widest text-slate-400 font-light">DEDICATED TO DIANA MULE MUTHIKE</div>
+        </header>
+
+        <!-- Main Workspace Presentation -->
+        <main class="w-full max-w-4xl mx-auto px-4 sm:px-6 my-auto py-16">
+            <div class="glass-card p-8 sm:p-20 rounded-3xl shadow-2xl relative overflow-hidden">
+                <!-- Internal ambient emerald glow mapping -->
+                <div class="absolute -top-32 -right-32 w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-32 -left-32 w-64 h-64 bg-teal-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <!-- Typewriter Functional Tagline Container -->
+                <div class="mb-10 reveal active">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-widest">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> 
+                        <span id="typewriter-text"></span><span class="cursor"></span>
+                    </span>
+                </div>
+
+                <!-- Main Hero Typography Block -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-8 leading-[1.15] reveal active">
+                    Diana Mule Muthike: <br>
+                    <span class="text-gradient-emerald">Architect of Outcomes.</span>
+                </h1>
+
+                <!-- Editorial Speech Presentation Content -->
+                <div class="space-y-6 text-base sm:text-lg text-slate-300 font-light leading-relaxed">
+                    <p class="reveal">
+                        The metrics of average success are built on simple patterns—doing just enough to meet preexisting expectations. But your blueprint, Diana, demands a complete redesign of conventional frameworks. You process a deliberate internal clarity that naturally identifies leverage points where others only see obstacles.
+                    </p>
+                    <blockquote class="border-l-2 border-emerald-500 pl-5 my-8 italic text-slate-400 font-normal reveal">
+                        "Do not shrink your targets to adapt to standard operating environments. True scale requires implementing systems built for your specific expansion."
+                    </blockquote>
+                    <p class="reveal">
+                        Friction is not a signal to slow your execution; it is merely structural feedback to analyze, re-engineer, and conquer. Your baseline capability is anchored by a rare blend of strategic instinct and unyielding composure. You do not survive changing landscapes—you command them.
+                    </p>
+                    <p class="reveal">
+                        Move forward into your upcoming objectives with complete, deliberate clarity. Let the quiet consistency of your actions disrupt the noise of doubt, challenge the parameters of what is assumed possible, and construct a standard of excellence that stands entirely on its own terms. Own the architecture.
+                    </p>
+                </div>
+
+                <!-- Modern Interactive Action Panel Inside Card -->
+                <div class="mt-14 pt-8 border-t border-slate-800/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 reveal">
+                    <div class="text-sm text-slate-400 font-light tracking-wide">
+                        Absolute precision. Uncompromising execution.
+                    </div>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-medium text-sm transition-all duration-300 shadow-xl shadow-emerald-950/30 hover:scale-[1.02] active:scale-[0.98] cursor-pointer tracking-wider uppercase font-semibold">
+                        Recalibrate Vision
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Deep Analytical Metadata Footer Layout -->
+        <footer class="w-full max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-slate-900/60 text-xs text-slate-500 tracking-wider reveal">
+            <div>
+                <p class="font-bold text-slate-400 uppercase mb-1">Instance</p>
+                <p>D. M. Muthike // Uncompromising Depth</p>
+            </div>
+            <div>
+                <p class="font-bold text-slate-400 uppercase mb-1">Architecture</p>
+                <p>Three.js Infinite Wireframe Mesh</p>
+            </div>
+            <div>
+                <p class="font-bold text-slate-400 uppercase mb-1">Matrix</p>
+                <p>Dynamic Perspective Interpolation</p>
+            </div>
+            <div class="text-right">
+                <p class="font-bold text-slate-400 uppercase mb-1">Telemetry</p>
+                <p class="text-emerald-400 font-semibold animate-pulse">Optimal State • 100%</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT: 3D ENGINE & UI INTERACTIONS    -->
+    <!-- ========================================== -->
+    <script>
+        // --- 1. JAVASCRIPT UI: TYPEWRITER INTERACTION ENGINE ---
+        const typewriterText = "Maximize Structural Focus";
+        const typewriterElement = document.getElementById('typewriter-text');
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (charIndex < typewriterText.length) {
+                typewriterElement.textContent += typewriterText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 90); 
+            }
+        }
+        setTimeout(typeWriter, 800);
+
+
+        // --- 2. JAVASCRIPT UI: INTERSECTION OBSERVER SCROLL REVEALS ---
+        const reveals = document.querySelectorAll('.reveal');
+        const observerOptions = {
+            threshold: 0.05, 
+            rootMargin: "0px 0px -40px 0px"
+        };
+
+        const scrollObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        reveals.forEach(reveal => {
+            scrollObserver.observe(reveal);
+        });
+
+
+        // --- 3. JAVASCRIPT 3D ENGINE: INFINITE 3D WIREFRAME MESH ENVIRONMENT ---
+        const matrixBg = document.getElementById('matrix-bg');
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); 
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // CREATE AN ARCHITECTURAL PERSPECTIVE GRID GEOMETRY
+        const width = 35;
+        const height = 35;
+        const widthSegments = 25;
+        const heightSegments = 25;
+        
+        const planeGeometry = new THREE.PlaneGeometry(width, height, widthSegments, heightSegments);
+        
+        // Displace vertices to create a rugged plane terrain matrix
+        const positionAttribute = planeGeometry.attributes.position;
+        for (let i = 0; i < positionAttribute.count; i++) {
+            const u = Math.random();
+            // Subtle geometric mathematical ripples
+            const z = Math.sin(positionAttribute.getX(i) * 0.4) * Math.cos(positionAttribute.getY(i) * 0.4) * 0.4;
+            positionAttribute.setZ(i, z + (Math.random() - 0.5) * 0.15);
+        }
+        planeGeometry.computeVertexNormals();
+
+        // Convert geometry to sleek premium technical wireframe lines
+        const wireframe = new THREE.WireframeGeometry(planeGeometry);
+        const lineMaterial = new THREE.LineBasicMaterial({
+            color: 0x059669,       // Emerald Teal Matrix Color
+            transparent: true,
+            opacity: 0.22,
+            blending: THREE.AdditiveBlending
+        });
+
+        const gridMesh = new THREE.LineSegments(wireframe, lineMaterial);
+        
+        // Orient the mesh landscape plane structurally below the camera sightlines
+        gridMesh.rotation.x = -Math.PI / 2.3;
+        gridMesh.position.set(0, -2, -4);
+        scene.add(gridMesh);
+
+        camera.position.z = 6;
+
+        // Interactive Scroll Track Physics Hook
+        let scrollY = 0;
+        let targetSpeedX = 0;
+        window.addEventListener('scroll', () => {
+            scrollY = window.scrollY;
+            
+            // Kinetic velocity plane tilting adjustments matching scroll interaction
+            targetSpeedX = scrollY * 0.0002;
+
+            // Shift background underlay via smooth parallax translation physics
+            matrixBg.style.transform = `translateY(${-scrollY * 0.06}px)`;
+        });
+
+        // Window configuration modification engine adapter
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Infinite Kinematic Rendering Animation Loop
+        const clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate);
+            const elapsedTime = clock.getElapsedTime();
+
+            // Continuous structural rotation matrix sequence
+            gridMesh.rotation.z = (elapsedTime * 0.02) + targetSpeedX;
+            
+            // Gentle natural architectural wave effect using trigonometric offset variations
+            gridMesh.position.y = -1.8 + Math.sin(elapsedTime * 0.4) * 0.08;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
